@@ -36,7 +36,7 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ github.token }}
           MINIMUM_GREEN: 90
-          MINIMUM_ORANGE: 50
+          MINIMUM_ORANGE: 70
 
       - name: Enforce minimum coverage
-        run: python -m coverage report --fail-under=50
+        run: python -m coverage report --fail-under=90
